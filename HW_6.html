@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	ul{
+	list-style: none;
+	}
+	.first {
+		display: inline-block;
+	}
+	.second {
+		display: inline-block;
+	}
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /* Added outline to the rows to match the image*/
+        .row {
+            outline: 16px solid white;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        
+    
+        }
+    </style>
+</head>
+
+<body>
+	<div class="row">
+  		<div class="col-4 menu">
+    		<img src ="https://via.placeholder.com/350x150"/>
+  		</div>
+		<div class = "col-8">
+			<div class = "col-2">
+				<img src ="https://via.placeholder.com/116x30"/>
+			</div>
+			<div class = "col-2">
+				<img src ="https://via.placeholder.com/116x30"/>
+			</div>
+			<div class = "col-2">
+				<img src ="https://via.placeholder.com/116x30"/>
+			</div>
+			<div class = "col-2">
+				<img src ="https://via.placeholder.com/116x30"/>
+			</div>
+			<div class = "col-2">
+				<img src ="https://via.placeholder.com/116x30"/>
+			</div>
+			<div class = "col-2">
+				<img src ="https://via.placeholder.com/116x30"/>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+  		<div class="col-4">
+    			<ul>
+    			<li><img src ="https://via.placeholder.com/345x30"/></li>
+    			<li><img src ="https://via.placeholder.com/345x30"/></li>
+    			<li><img src ="https://via.placeholder.com/345x30"/></li>
+    			<li><img src ="https://via.placeholder.com/345x30"/></li>
+			<li><img src ="https://via.placeholder.com/345x30"/></li>
+			<li><img src ="https://via.placeholder.com/345x30"/></li>
+    			</ul>
+  		</div>
+		<div class ="col-4">
+			<ul>
+    			<li><img src ="https://via.placeholder.com/345x345"/></li>
+    			<li><img src ="https://via.placeholder.com/345x345"/></li>
+    			</ul>
+  		</div>
+		<div class="col-4">
+    			<ul>
+    			<li><img src ="https://via.placeholder.com/345x345"/></li>
+    			<li><img src ="https://via.placeholder.com/345x345"/></li>
+		</div>
+	
+	</div>
+	<div class = "row">
+		<div class = "col-4">
+			<ul>
+    			<li></li>
+			</ul>
+		</div>
+		<div class = "col-4">
+			<ul>
+			<li><img src ="https://via.placeholder.com/345x175"/></li>
+			<li class = "first"><img src ="https://via.placeholder.com/185x40"/></li>
+			<li class = "first"><img src ="https://via.placeholder.com/185x40"/></li>
+			<li class = "second"><img src ="https://via.placeholder.com/185x40"/></li>
+			<li class = "second"><img src ="https://via.placeholder.com/185x40"/></li>
+			</ul>
+		</div>
+	</div>
+			
+		
+   
+</body>
+</html>
